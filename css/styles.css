@@ -1,14 +1,10 @@
 /* ===== BASE ===== */
 body {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0;
   color: #434455;
   background-color: #ffffff;
+  line-height: 1.5;
   margin: 0;
-  padding: 0;
 }
 
 h1, h2, h3, p {
@@ -21,6 +17,11 @@ ul {
   padding: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -29,42 +30,52 @@ a {
 button {
   font-family: inherit;
   cursor: pointer;
-  font-size: 16px;
-  line-height: 1.5;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 /* ===== HEADER ===== */
 .header {
-  background-color: #ffffff;
   border-bottom: 1px solid #e7e9fc;
+  background-color: #ffffff;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 24px 0;
 }
 
 .logo {
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
   font-size: 18px;
-  line-height: 1.2;
-  text-transform: uppercase;
+  font-weight: 700;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
 }
 
-.logo .logo-accent {
-  color: #4d5ae5; /* Web синій */
+.logo-accent {
+  color: #2e2f42;
 }
 
 .nav-list {
-  margin-left: 76px;
-  padding: 0;
+  display: flex;
+  gap: 40px;
 }
 
 .nav-link {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
-  padding: 24px 0;
+  line-height: 1.5;
+  padding: 8px 0;
 }
 
 .nav-link:hover,
@@ -72,16 +83,14 @@ button {
   color: #404bbf;
 }
 
-.address {
-  font-style: normal;
+.address-list {
+  display: flex;
+  gap: 40px;
 }
 
 .address-link {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
+  font-style: normal;
   letter-spacing: 0.02em;
-  color: #434455;
 }
 
 .address-link:hover,
@@ -91,31 +100,28 @@ button {
 
 /* ===== HERO ===== */
 .hero {
-  background-color: #2e2f42; /* темний фон */
-  padding: 188px 0 160px;
+  background-color: #2e2f42;
+  padding: 188px 0;
   text-align: center;
 }
 
 .hero-title {
-  font-weight: 700;
   font-size: 56px;
+  font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: #ffffff;
-  max-width: 496px;
-  margin: 0 auto 48px;
+  margin-bottom: 48px;
 }
 
 .hero-button {
+  min-width: 169px;
+  height: 56px;
   background-color: #4d5ae5;
-  color: #ffffff;
   border: none;
-  padding: 18px 32px;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em; /* виправлено */
-  cursor: pointer;
+  letter-spacing: 0.08em;
+  color: #ffffff;
 }
 
 .hero-button:hover,
@@ -129,79 +135,79 @@ button {
 }
 
 .features-title {
-  text-align: center;
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   color: #2e2f42;
+  text-align: center;
   margin-bottom: 72px;
 }
 
 .features-list {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
 .features-item {
-  margin-bottom: 48px; /* відстань між картками */
+  width: calc((100% - 72px)/4);
 }
 
 .features-subtitle {
-  font-weight: 500;
   font-size: 20px;
+  font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  text-align: left; /* виправлено */
+  text-align: left;
   margin-bottom: 8px;
 }
 
 .features-text {
-  font-weight: 400;
-  font-size: 16px;
+  color: #434455;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
-  text-align: left; /* виправлено */
+  text-align: left;
 }
 
 /* ===== TEAM ===== */
 .team {
-  background-color: #f4f4fd; /* світлий фон секції */
+  background-color: #f4f4fd;
   padding: 120px 0;
 }
 
 .team-title {
-  text-align: center;
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   color: #2e2f42;
+  text-align: center;
   margin-bottom: 72px;
 }
 
+.team-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
 .team-item {
-  background-color: #ffffff; /* білий фон картки */
-  padding: 32px 16px 32px;
-  margin-bottom: 32px;
+  background-color: #ffffff;
   text-align: center;
+  padding-bottom: 32px;
 }
 
 .team-name {
-  font-weight: 500;
   font-size: 20px;
+  font-weight: 500;
+  color: #2e2f42;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin-top: 16px;
+  margin-top: 32px;
 }
 
 .team-position {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
   margin-top: 8px;
 }
 
@@ -211,69 +217,69 @@ button {
 }
 
 .portfolio-title {
-  text-align: center;
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   color: #2e2f42;
+  text-align: center;
   margin-bottom: 72px;
 }
 
+.portfolio-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
 .portfolio-item {
-  background-color: #ffffff; /* фон картки */
-  padding: 16px;
-  margin-bottom: 48px;
+  width: calc((100% - 48px)/3);
 }
 
 .portfolio-subtitle {
-  font-weight: 500;
   font-size: 20px;
+  font-weight: 500;
+  color: #2e2f42;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
-  text-align: left; /* виправлено */
-  margin-top: 16px;
+  text-align: left;
+  margin: 16px 0 8px;
 }
 
 .portfolio-text {
-  font-weight: 400;
-  font-size: 16px;
+  color: #434455;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
-  text-align: left; /* виправлено */
-  margin-top: 8px;
+  text-align: left;
+  margin: 0 0 32px 0;
 }
 
 /* ===== FOOTER ===== */
 .footer {
-  background-color: #2e2f42; /* темний фон */
+  background-color: #2e2f42;
   padding: 100px 0;
   text-align: center;
 }
 
 .footer-logo {
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
   font-size: 18px;
-  line-height: 1.2;
+  font-weight: 700;
   text-transform: uppercase;
+  line-height: 1.2;
   letter-spacing: 0.03em;
-  color: #4d5ae5; /* Web синій */
+  color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo .logo-accent {
-  color: #f4f4fd; /* Studio світлий */
+  color: #f4f4fd;
 }
 
 .footer-text {
-  font-weight: 400;
-  font-size: 16px;
+  max-width: 264px;
+  color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #f4f4fd;
-  margin-top: 16px;
-  max-width: 264px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
+
