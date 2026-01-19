@@ -34,14 +34,7 @@ button {
 
 /* ===== HEADER ===== */
 .header {
-  border-bottom: 1px solid #e7e9fc;
-}
-
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 72px;
+  background-color: #ffffff;
 }
 
 .logo {
@@ -50,7 +43,7 @@ button {
   font-size: 18px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: #2e2f42;
 }
 
 .logo-accent {
@@ -70,9 +63,10 @@ button {
   color: #404bbf;
 }
 
-.address-link {
+.address, .address-link {
   font-style: normal;
   line-height: 1.5;
+  letter-spacing: 0.02em;
   color: #434455;
 }
 
@@ -82,6 +76,12 @@ button {
 }
 
 /* ===== HERO ===== */
+.hero {
+  background-color: #2e2f42;
+  text-align: center;
+  padding: 188px 0;
+}
+
 .hero-title {
   font-size: 56px;
   font-weight: 700;
@@ -94,7 +94,7 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.08em;
   color: #ffffff;
   background-color: #4d5ae5;
   border: none;
@@ -106,6 +106,11 @@ button {
 }
 
 /* ===== FEATURES ===== */
+.features {
+  background-color: #ffffff;
+  text-align: center;
+}
+
 .features-title {
   font-size: 36px;
   line-height: 1.11;
@@ -121,50 +126,79 @@ button {
 }
 
 .features-text {
+  color: #434455;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
 /* ===== TEAM ===== */
+.team {
+  background-color: #f4f4fd;
+  text-align: center;
+}
+
 .team-title {
   font-size: 36px;
   line-height: 1.11;
   color: #2e2f42;
+  text-align: center;
 }
 
 .team-name {
   font-size: 20px;
   font-weight: 500;
   color: #2e2f42;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 .team-position {
+  color: #434455;
+  text-align: center;
   line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 /* ===== PORTFOLIO ===== */
+.portfolio {
+  background-color: #ffffff;
+  text-align: center;
+}
+
 .portfolio-title {
   font-size: 36px;
   line-height: 1.11;
   color: #2e2f42;
+  text-align: center;
 }
 
 .portfolio-subtitle {
   font-size: 20px;
   font-weight: 500;
   color: #2e2f42;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 .portfolio-text {
+  color: #434455;
   line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 /* ===== FOOTER ===== */
+.footer {
+  background-color: #2e2f42;
+  text-align: center;
+}
+
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  color: #4d5ae5;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 .footer-logo .logo-accent {
@@ -176,3 +210,4 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
