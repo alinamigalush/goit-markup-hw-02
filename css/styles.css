@@ -1,71 +1,177 @@
-/* Body */
+/* ===== BASE ===== */
 body {
-  font-family: Roboto, sans-serif;
-  color: #333333;
-  line-height: 1.5;
-  background-color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  background-color: #ffffff;
+  line-height: 1.5; /* додаємо ритм тексту */
+}
+
+h1, h2, h3, p {
   margin: 0;
 }
 
-/* Links */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
-a:hover,
-a:focus {
-  color: #2F80ED;
-}
 
-/* Header Logo */
-.logo-accent {
-  color: #2F80ED;
-}
-.logo {
-  color: #333333;
-}
-
-/* Footer Logo */
-.footer-logo-accent {
-  color: #2F80ED;
-}
-.footer-logo {
-  color: #FFFFFF;
-}
-
-/* Address */
-address,
-.address a {
-  font-style: normal;
-}
-
-/* Section Titles */
-.section-title {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-}
-
-/* Navigation */
-.nav-list a {
-  font-size: 16px;
-  letter-spacing: 0.02em;
-}
-
-/* Hero */
-.hero-button {
-  line-height: 1.2;
-  letter-spacing: 0.05em;
+button {
+  font-family: inherit;
   cursor: pointer;
 }
 
-/* Features & Portfolio cards */
-.features-list p,
-.portfolio-item p {
-  line-height: 1.4;
-  letter-spacing: 0.02em;
+/* ===== HEADER ===== */
+.header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
-/* Footer Paragraph */
-.footer p {
-  letter-spacing: 0.05em;
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5; /* Web синій */
+}
+
+.logo-accent {
+  color: #2e2f42; /* Studio темний */
+}
+
+.nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #404bbf;
+}
+
+.address-link {
+  font-style: normal; /* прибираємо стандартний курсив */
+  line-height: 1.5;
+  color: #434455;
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: #404bbf;
+}
+
+/* ===== HERO ===== */
+.hero-title {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero-button {
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  background-color: #4d5ae5;
+  border: none;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #404bbf;
+}
+
+/* ===== FEATURES ===== */
+.features-title {
+  font-size: 36px;
+  line-height: 1.11;
+  color: #2e2f42;
+  text-align: center;
+}
+
+.features-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.features-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+/* ===== TEAM ===== */
+.team-title {
+  font-size: 36px;
+  line-height: 1.11;
+  color: #2e2f42;
+  text-align: center;
+}
+
+.team-name {
+  font-size: 20px;
+  font-weight: 500;
+  color: #2e2f42;
+}
+
+.team-position {
+  line-height: 1.5;
+  color: #434455;
+}
+
+/* ===== PORTFOLIO ===== */
+.portfolio-title {
+  font-size: 36px;
+  line-height: 1.11;
+  color: #2e2f42;
+  text-align: center;
+}
+
+.portfolio-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: #2e2f42;
+}
+
+.portfolio-text {
+  line-height: 1.5;
+  color: #434455;
+}
+
+/* ===== FOOTER ===== */
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4d5ae5; /* Web синій */
+}
+
+.footer-logo .logo-accent {
+  color: #f4f4fd; /* Studio світлий */
+}
+
+.footer-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
 }
