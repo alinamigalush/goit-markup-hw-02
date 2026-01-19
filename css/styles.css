@@ -33,6 +33,16 @@ button {
   cursor: pointer;
 }
 
+/* visually hidden */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
 /* ===== CONTAINER ===== */
 .container {
   max-width: 1158px;
@@ -80,7 +90,6 @@ button {
   color: #404bbf;
 }
 
-/* 🔧 FIX 1: address не курсив */
 .address {
   margin-left: auto;
   font-style: normal;
@@ -112,7 +121,6 @@ button {
   color: #ffffff;
 }
 
-/* 🔧 FIX 2: правильний letter-spacing */
 .hero-button {
   min-width: 169px;
   height: 56px;
@@ -133,14 +141,6 @@ button {
   padding: 120px 0;
 }
 
-.features-title {
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  color: #2e2f42;
-  margin-bottom: 72px;
-}
-
 .features-list {
   display: flex;
   gap: 24px;
@@ -150,7 +150,6 @@ button {
   width: calc((100% - 72px) / 4);
 }
 
-/* 🔧 FIX 3: явне вирівнювання */
 .features-subtitle {
   font-size: 20px;
   font-weight: 500;
@@ -186,7 +185,6 @@ button {
   gap: 24px;
 }
 
-/* 🔧 FIX 4: білий фон КОЖНІЙ картці */
 .team-item {
   width: calc((100% - 72px) / 4);
   background-color: #ffffff;
@@ -234,7 +232,12 @@ button {
   width: calc((100% - 48px) / 3);
 }
 
-/* 🔧 FIX 5: явне вирівнювання */
+.portfolio-card-content {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
 .portfolio-subtitle {
   font-size: 20px;
   font-weight: 500;
@@ -249,12 +252,6 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: left;
-}
-
-.portfolio-card-content {
-  padding: 32px 16px;
-  border: 1px solid #e7e9fc;
-  border-top: none;
 }
 
 /* ===== FOOTER ===== */
@@ -275,7 +272,6 @@ button {
   margin-bottom: 16px;
 }
 
-/* 🔧 FIX 6: світлий Studio */
 .footer-logo-text {
   color: #f4f4fd;
 }
