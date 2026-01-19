@@ -41,6 +41,7 @@ button {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2e2f42;
@@ -94,7 +95,7 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em; /* Виправлено відповідно до вимог */
   color: #ffffff;
   background-color: #4d5ae5;
   border: none;
@@ -108,13 +109,17 @@ button {
 /* ===== FEATURES ===== */
 .features {
   background-color: #ffffff;
-  text-align: center;
 }
 
 .features-title {
   font-size: 36px;
   line-height: 1.11;
   color: #2e2f42;
+  text-align: center;
+}
+
+.features-item {
+  text-align: left; /* Виправлено */
 }
 
 .features-subtitle {
@@ -144,6 +149,12 @@ button {
   text-align: center;
 }
 
+.team-item {
+  background-color: #ffffff; /* Виправлено */
+  padding: 16px;
+  text-align: center;
+}
+
 .team-name {
   font-size: 20px;
   font-weight: 500;
@@ -163,7 +174,6 @@ button {
 /* ===== PORTFOLIO ===== */
 .portfolio {
   background-color: #ffffff;
-  text-align: center;
 }
 
 .portfolio-title {
@@ -171,6 +181,10 @@ button {
   line-height: 1.11;
   color: #2e2f42;
   text-align: center;
+}
+
+.portfolio-item {
+  text-align: left; /* Виправлено */
 }
 
 .portfolio-subtitle {
@@ -197,12 +211,18 @@ button {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
+  line-height: 1.2; /* Додано */
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  color: #ffffff; /* Загальний fallback */
 }
 
 .footer-logo .logo-accent {
-  color: #4d5ae5;
+  color: #4d5ae5; /* "Web" */
+}
+
+.footer-logo span:last-child {
+  color: #f4f4fd; /* "Studio" */
 }
 
 .footer-text {
