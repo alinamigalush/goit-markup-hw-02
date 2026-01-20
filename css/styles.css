@@ -108,6 +108,10 @@ a {
   color: #2e2f42;
 }
 
+.team-position {
+  letter-spacing: 0.02em;
+}
+
 /* PORTFOLIO */
 .portfolio-subtitle {
   font-size: 20px;
@@ -154,5 +158,6 @@ a {
   overflow: hidden;
   clip: rect(0 0 0 0);
 }
+
 
 
